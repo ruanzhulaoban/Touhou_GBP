@@ -1,0 +1,32 @@
+#include "BurnEffect.h"
+#include "../Enemy/EnemyBase.h"
+
+namespace TowerDefense {
+
+BurnEffect::BurnEffect(EnemyBase* target, float duration, float damagePerTick, float tickInterval)
+    : Effect(EffectType::BURN, duration, target)
+    , m_damagePerTick(damagePerTick)
+    , m_tickInterval(tickInterval)
+    , m_tickTimer(0.0f)
+{
+}
+
+void BurnEffect::onApply(EnemyBase* enemy) {
+    (void)enemy;
+    m_tickTimer = 0.0f;
+}
+
+void BurnEffect::onTick(float deltaTime) {
+    m_remainingTime -= deltaTime;
+    m_tickTimer += deltaTime;
+    if (m_tickTimer >= m_tickInterval && m_target && !m_target->isDead()) {
+        m_tickTimer = 0.0f;
+        m_target->takeDamage(m_damagePerTick, EffectType::BURN);
+    }
+}
+
+void BurnEffect::onRemove() {
+    // 灼烧无恢复操作
+}
+
+} // namespace TowerDefense
