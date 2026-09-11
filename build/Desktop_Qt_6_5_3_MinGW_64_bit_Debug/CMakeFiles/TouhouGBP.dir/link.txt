@@ -1,0 +1,3 @@
+D:\Qt_sec\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\TouhouGBP.dir/objects.a
+D:\Qt_sec\Tools\mingw1120_64\bin\ar.exe qc CMakeFiles\TouhouGBP.dir/objects.a @CMakeFiles\TouhouGBP.dir\objects1.rsp
+D:\Qt_sec\Tools\mingw1120_64\bin\g++.exe -g -mwindows -Wl,--whole-archive CMakeFiles\TouhouGBP.dir/objects.a -Wl,--no-whole-archive -o TouhouGBP.exe -Wl,--out-implib,libTouhouGBP.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TouhouGBP.dir\linkLibs.rsp

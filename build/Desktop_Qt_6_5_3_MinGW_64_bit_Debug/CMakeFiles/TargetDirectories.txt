@@ -1,0 +1,9 @@
+D:/qt/TouhouGBP/build/Desktop_Qt_6_5_3_MinGW_64_bit_Debug/CMakeFiles/TouhouGBP.dir
+D:/qt/TouhouGBP/build/Desktop_Qt_6_5_3_MinGW_64_bit_Debug/CMakeFiles/edit_cache.dir
+D:/qt/TouhouGBP/build/Desktop_Qt_6_5_3_MinGW_64_bit_Debug/CMakeFiles/rebuild_cache.dir
+D:/qt/TouhouGBP/build/Desktop_Qt_6_5_3_MinGW_64_bit_Debug/CMakeFiles/list_install_components.dir
+D:/qt/TouhouGBP/build/Desktop_Qt_6_5_3_MinGW_64_bit_Debug/CMakeFiles/install.dir
+D:/qt/TouhouGBP/build/Desktop_Qt_6_5_3_MinGW_64_bit_Debug/CMakeFiles/install/local.dir
+D:/qt/TouhouGBP/build/Desktop_Qt_6_5_3_MinGW_64_bit_Debug/CMakeFiles/install/strip.dir
+D:/qt/TouhouGBP/build/Desktop_Qt_6_5_3_MinGW_64_bit_Debug/CMakeFiles/TouhouGBP_autogen_timestamp_deps.dir
+D:/qt/TouhouGBP/build/Desktop_Qt_6_5_3_MinGW_64_bit_Debug/CMakeFiles/TouhouGBP_autogen.dir
