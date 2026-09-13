@@ -86,15 +86,6 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         GamePage.cpp
         GameWidget.cpp
         StartPage.cpp
-
-
-        build/config/game_config.json
-        build/Desktop_Qt_6_5_3_MinGW_64_bit_Debug/assets/images/bullet.png
-        build/Desktop_Qt_6_5_3_MinGW_64_bit_Debug/assets/images/dark_soil.png
-        build/Desktop_Qt_6_5_3_MinGW_64_bit_Debug/assets/images/enemy_boss.png
-        build/Desktop_Qt_6_5_3_MinGW_64_bit_Debug/assets/images/enemy_fast.png
-        build/Desktop_Qt_6_5_3_MinGW_64_bit_Debug/assets/images/enemy_heavy.png
-        build/Desktop_Qt_6_5_3_MinGW_64_bit_Debug/assets/images/enemy_normal.png
         Bullet/SlowBullet.h
         Bullet/SlowBullet.cpp
         Audio/AudioManager.h

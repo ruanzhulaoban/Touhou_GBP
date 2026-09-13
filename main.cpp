@@ -7,8 +7,8 @@
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
-    // 加载配置文件
-    QString configPath = "D:\\qt\\TouhouGBP\\build\\config\\game_config.json";
+    // 加载配置文件（相对于运行目录）
+    QString configPath = QStringLiteral("config/game_config.json");
     if (!TowerDefense::ConfigLoader::loadConfig(configPath)) {
         QMessageBox::critical(nullptr, "配置加载失败",
                               QString("无法加载配置文件:\n%1\n\n请检查路径。").arg(configPath));
