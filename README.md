@@ -5,7 +5,7 @@
 
 ---
 
-## ⚠️ 同人作品声明（版权说明）
+## 同人作品声明（版权说明）
 
 本项目是一款**同人（二次创作）作品**，仅供学习交流与非商业用途，**与官方无关**。
 
@@ -88,13 +88,29 @@ TouhouGBP/
 ### 方法二：命令行（CMake）
 
 ```bash
+# Debug（开发调试）
 cmake -S . -B build -DCMAKE_PREFIX_PATH=/path/to/Qt/6.x.x/gcc_64
 cmake --build build
+
+# Release（发布版本，更小更快）
+cmake -S . -B build-release -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=/path/to/Qt/6.x.x/gcc_64
+cmake --build build-release --config Release
 ```
+
+### 方法三：Release 构建与部署（发布版）
+
+1. **Qt Creator**：在左下角构建套件选择器中把构建配置从 `Debug` 切换为 `Release`，再构建。
+2. **命令行**：如上加 `-DCMAKE_BUILD_TYPE=Release`（MinGW / GCC 等单配置生成器用此参数；Visual Studio 等多配置生成器则改用 `cmake --build build --config Release`）。
+3. **部署到无 Qt 环境的机器**（Windows）：用 `windeployqt` 打包 Qt 运行库，再把 `config/`、`assets/` 复制到可执行文件同目录，即可双击运行：
+   ```bash
+   windeployqt --release build-release/TouhouGBP.exe
+   xcopy config build-release\config /E /I
+   xcopy assets build-release\assets /E /I
+   ```
 
 ---
 
-## ⚠️ 运行前必读：相对路径与工作目录
+## 运行前必读：相对路径与工作目录
 
 配置与资源已与 `build/` 分离，全部改为**相对路径**加载，位于项目根目录：
 
